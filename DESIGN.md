@@ -119,3 +119,15 @@ Pip đổi mặt, nền hero và lời thoại theo **tổng tiền donate trong
 - [ ] Cân nhắc tự host font trong `assets/fonts/` để bỏ phụ thuộc CDN.
 - [ ] Thêm ảnh `og:image` để link chia sẻ có hình xem trước.
 - [ ] Xem lại bố cục bong bóng thoại của Pip trên desktop và mobile bằng mắt.
+
+## 7. Hosting & cache
+
+- **Đã chốt:** chuyển từ GitHub Pages sang **Cloudflare Pages** (miễn phí, deploy từ repo GitHub). Lý do: GitHub Pages luôn gửi `Cache-Control: max-age=600` và không cho cấu hình, nên Pingdom chấm D ở mục "Add Expires headers".
+- File `_headers` quy định cache (Cloudflare Pages/Netlify đọc file này, GitHub Pages bỏ qua):
+  - `/css/*`, `/js/*`, `/assets/*`: cache 1 năm, `immutable`.
+  - `/`, `/index.html`, `/data/*`: `no-cache` (luôn kiểm tra bản mới, để mood của Pip cập nhật đúng).
+- **Quy tắc khi sửa file:** vì CSS/JS/favicon được cache 1 năm, mỗi lần sửa `css/style.css`, `js/main.js` hoặc `assets/favicon.svg` phải **đổi số `?v=` tương ứng trong `index.html`** (hiện là `20261107`), nếu không người đã truy cập sẽ thấy bản cũ.
+- Cấu hình Cloudflare Pages: kết nối repo, **không** cần build command, thư mục output là thư mục gốc (`/`).
+- Lưu ý: Cloudflare Pages phục vụ cả thư mục gốc, nên `DESIGN.md` cũng truy cập được công khai ở `/DESIGN.md`.
+
+- [ ] Tạo project Cloudflare Pages và trỏ tên miền vào đó.

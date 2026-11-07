@@ -1,0 +1,26 @@
+# Cloudflare Pages / Netlify response headers (ignored by GitHub Pages).
+# Static assets are cached for 1 year; their URLs carry ?v=... in index.html,
+# so bump that version whenever css/js/assets change.
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Always revalidate the page and the donation data so Pip's mood stays fresh.
+/
+  Cache-Control: no-cache
+
+/index.html
+  Cache-Control: no-cache
+
+/data/*
+  Cache-Control: no-cache
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

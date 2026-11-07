@@ -9,11 +9,24 @@
   <meta property="og:description" content="One raccoon. One dream. Zero investors. Buy Pip a coffee." />
   <meta property="og:type" content="website" />
   <script>document.documentElement.classList.add("js")</script>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg?v=1" type="image/svg+xml" />
+  <!-- Fonts: variable woff2 (latin subset) from jsDelivr CDN, preloaded, no render-blocking CSS hop -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.3.0/files/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/space-grotesk@5.3.0/files/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+    @font-face {
+      font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap;
+      src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.3.0/files/inter-latin-wght-normal.woff2") format("woff2-variations");
+      src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.3.0/files/inter-latin-wght-normal.woff2") format("woff2") tech("variations");
+    }
+    @font-face {
+      font-family: "Space Grotesk"; font-style: normal; font-weight: 300 700; font-display: swap;
+      src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/space-grotesk@5.3.0/files/space-grotesk-latin-wght-normal.woff2") format("woff2-variations");
+      src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/space-grotesk@5.3.0/files/space-grotesk-latin-wght-normal.woff2") format("woff2") tech("variations");
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css?v=20261107" />
 </head>
 <body>
 
@@ -37,7 +50,7 @@
       <div class="blob blob--1" aria-hidden="true"></div>
       <div class="blob blob--2" aria-hidden="true"></div>
       <div class="container hero__grid">
-        <div class="hero__copy reveal">
+        <div class="hero__copy">
           <span class="badge">🚀 Now in public beta (since birth)</span>
           <h1>Disrupting the begging industry. <span class="grad-text">One stranger at a time.</span></h1>
           <p class="lead">
@@ -57,7 +70,7 @@
           </ul>
         </div>
 
-        <div class="hero__visual reveal">
+        <div class="hero__visual">
           <div class="mood-bubble card" id="moodBubble" aria-live="polite">
             <strong id="moodTitle">Pip is a little sad</strong>
             <span id="moodText">It's been a quiet month&hellip;</span>
@@ -436,6 +449,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261107"></script>
 </body>
 </html>
