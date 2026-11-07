@@ -1,0 +1,6 @@
+{
+  "month": "2026-11",
+  "amount": 0,
+  "currency": "USD",
+  "note": "Edit 'amount' with the total donated this calendar month. When 'month' (YYYY-MM) is not the current month, the site treats it as a new month starting at $0."
+}

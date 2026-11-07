@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beggr™ — Disrupting the begging industry</title>
+  <meta name="description" content="Beggr is the world's first fully transparent, zero-pressure begging platform. Run by one raccoon with a dream and an empty wallet." />
+  <meta property="og:title" content="Beggr™ — Disrupting the begging industry" />
+  <meta property="og:description" content="One raccoon. One dream. Zero investors. Buy Pip a coffee." />
+  <meta property="og:type" content="website" />
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo"><span class="logo__emoji">🦝</span> Beggr<sup>™</sup></a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#story">Story</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#give" class="btn btn--primary btn--sm">Give</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. HERO -->
+    <section class="section hero" style="--bg: var(--c-lavender)">
+      <div class="blob blob--1" aria-hidden="true"></div>
+      <div class="blob blob--2" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <span class="badge">🚀 Now in public beta (since birth)</span>
+          <h1>Disrupting the begging industry. <span class="grad-text">One stranger at a time.</span></h1>
+          <p class="lead">
+            Beggr is the world's first fully transparent, zero-pressure, AI-free<sup>*</sup> begging platform.
+            Run by one raccoon with a dream and an empty wallet.
+          </p>
+          <div class="hero__ctas">
+            <a href="#give" class="btn btn--primary">Fund the dream →</a>
+            <a href="#story" class="btn btn--ghost">Read the pitch deck</a>
+          </div>
+          <p class="footnote"><sup>*</sup>We can't afford AI.</p>
+          <ul class="proof">
+            <li><strong>0</strong> investors</li>
+            <li><strong>100%</strong> vibes</li>
+            <li><strong>1</strong> raccoon</li>
+            <li><strong>∞</strong> gratitude</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="mood-bubble card" id="moodBubble" aria-live="polite">
+            <strong id="moodTitle">Pip is a little sad</strong>
+            <span id="moodText">It's been a quiet month&hellip;</span>
+          </div>
+          <div class="mascot" id="mascot" role="img" aria-label="Pip the raccoon">
+            <svg viewBox="0 0 200 200" class="pip" aria-hidden="true">
+              <circle cx="48" cy="52" r="24" fill="#6B6785"/><circle cx="48" cy="54" r="12" fill="#F9A8D4"/>
+              <circle cx="152" cy="52" r="24" fill="#6B6785"/><circle cx="152" cy="54" r="12" fill="#F9A8D4"/>
+              <ellipse cx="100" cy="112" rx="72" ry="64" fill="#A29EBE"/>
+              <ellipse cx="100" cy="132" rx="46" ry="36" fill="#FFFFFF"/>
+              <path d="M26 100 Q62 78 100 96 Q138 78 174 100 Q166 128 138 124 Q112 120 100 112 Q88 120 62 124 Q34 128 26 100Z" fill="#2D2A4A"/>
+              <g class="eyes eyes--sad">
+                <circle cx="68" cy="104" r="13" fill="#fff"/><circle cx="132" cy="104" r="13" fill="#fff"/>
+                <circle cx="68" cy="107" r="8" fill="#1E1B3A"/><circle cx="132" cy="107" r="8" fill="#1E1B3A"/>
+                <circle cx="65" cy="103" r="3" fill="#fff"/><circle cx="129" cy="103" r="3" fill="#fff"/>
+                <path d="M52 86 L78 92" stroke="#2D2A4A" stroke-width="4" stroke-linecap="round" class="brow"/>
+                <path d="M148 86 L122 92" stroke="#2D2A4A" stroke-width="4" stroke-linecap="round" class="brow"/>
+                <path class="tear" d="M60 118 q-5 9 0 12 q5 -3 0 -12z" fill="#7DD3FC"/>
+              </g>
+              <g class="eyes eyes--happy">
+                <path d="M56 106 Q68 92 80 106" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <path d="M120 106 Q132 92 144 106" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="eyes eyes--ecstatic">
+                <text x="68" y="116" font-size="34" text-anchor="middle" fill="#FDE047" stroke="#fff" stroke-width="1">&#9733;</text>
+                <text x="132" y="116" font-size="34" text-anchor="middle" fill="#FDE047" stroke="#fff" stroke-width="1">&#9733;</text>
+              </g>
+              <ellipse cx="100" cy="128" rx="10" ry="7" fill="#2D2A4A"/>
+              <g class="blush"><circle cx="56" cy="134" r="8" fill="#FB7185" opacity=".55"/><circle cx="144" cy="134" r="8" fill="#FB7185" opacity=".55"/></g>
+              <path class="mouth mouth--sad" d="M84 152 Q100 140 116 152" stroke="#2D2A4A" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path class="mouth mouth--happy" d="M82 142 Q100 162 118 142" stroke="#2D2A4A" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <g class="mouth mouth--ecstatic">
+                <path d="M78 140 Q100 178 122 140Z" fill="#7F1D1D"/>
+                <path d="M88 156 Q100 150 112 156 Q100 166 88 156Z" fill="#FB7185"/>
+              </g>
+            </svg>
+            <span class="spark spark--1" aria-hidden="true">&#10024;</span>
+            <span class="spark spark--2" aria-hidden="true">&#10024;</span>
+          </div>
+          <div class="dash card">
+            <div class="dash__head">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="dash__title">Pip's Dashboard &middot; <span id="dashMonth">this month</span></span>
+            </div>
+            <div class="dash__row">
+              <span>Donations this month</span>
+              <strong class="dash__big"><span id="monthAmount">$0.00</span> <span id="trendIcon" aria-hidden="true">📉</span></strong>
+            </div>
+            <div class="dash__row"><span>Runway</span><strong id="runway">3 noodles</strong></div>
+            <div class="dash__row"><span>Status</span><strong class="status" id="moodStatus">● sad but adorable</strong></div>
+            <div class="meter" aria-label="Mood meter">
+              <div class="meter__bar"><div class="meter__fill" id="meterFill"></div><span class="meter__mark"></span></div>
+              <div class="meter__labels"><span>&#128546; $0</span><span class="meter__l2">&#128522; $500</span><span class="meter__l3">&#129321; $2k</span></div>
+              <p class="meter__hint" id="meterHint"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. AS NOT SEEN ON -->
+    <section class="section logos" style="--bg: var(--c-cream)">
+      <div class="container">
+        <p class="logos__label">As <em>not</em> seen on</p>
+        <ul class="logos__list">
+          <li>TrashCrunch</li>
+          <li>The Bin Street Journal</li>
+          <li>Snack Overflow</li>
+          <li>The Daily Dumpster</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. THE PROBLEM -->
+    <section class="section" style="--bg: var(--c-peach)">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">The problem</span>
+          <h2>Every startup solves a problem. Here's mine.</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card problem reveal">
+            <div class="problem__icon">🏠</div>
+            <h3>Rent</h3>
+            <p>Goes up every year. Like it's trying to reach the moon.</p>
+          </article>
+          <article class="card problem reveal">
+            <div class="problem__icon">👛</div>
+            <h3>Wallet</h3>
+            <p>Goes down every week. Like it's trying to reach the core of the Earth.</p>
+          </article>
+          <article class="card problem reveal">
+            <div class="problem__icon">🦝</div>
+            <h3>Me</h3>
+            <p>Stuck in the middle. Holding a sign.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. THE PITCH DECK (STORY) -->
+    <div id="story">
+      <section class="section story-intro" style="--bg: var(--c-mint)">
+        <div class="container section__head reveal">
+          <span class="eyebrow">The pitch deck</span>
+          <h2>Every founder has a story.<br />Mine is mostly snacks.</h2>
+        </div>
+      </section>
+
+      <section class="section chapter" style="--bg: var(--c-mint)">
+        <div class="container chapter__grid">
+          <div class="chapter__art reveal" aria-hidden="true">🗑️</div>
+          <div class="card chapter__card reveal">
+            <span class="pill">Chapter 01</span>
+            <h3>The Garage Era</h3>
+            <p>Every great startup begins in a garage. Mine began in the trash can <em>next to</em> the garage.</p>
+            <p>Humble beginnings. Smelly, too.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chapter chapter--flip" style="--bg: var(--c-butter)">
+        <div class="container chapter__grid">
+          <div class="chapter__art reveal" aria-hidden="true">🍋</div>
+          <div class="card chapter__card reveal">
+            <span class="pill">Chapter 02</span>
+            <h3>Searching for Product-Market Fit</h3>
+            <p>I tried selling lemonade. <span class="aside">(I drank it.)</span></p>
+            <p>I tried selling an NFT of a sandwich. <span class="aside">(I ate the sandwich.)</span></p>
+            <p>I tried selling my life story, but nobody wanted to buy a tragedy with no ending yet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chapter" style="--bg: var(--c-sky)">
+        <div class="container chapter__grid">
+          <div class="chapter__art reveal" aria-hidden="true">🔄</div>
+          <div class="card chapter__card reveal">
+            <span class="pill">Chapter 03</span>
+            <h3>The Pivot</h3>
+            <p>After 14 failed startups, I sat down and asked myself: <em>what am I actually good at?</em></p>
+            <p>The answer was clear. Asking nicely.</p>
+            <p><strong>So I made that the product.</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chapter chapter--flip" style="--bg: var(--c-pink)">
+        <div class="container chapter__grid">
+          <div class="chapter__art reveal" aria-hidden="true">💼</div>
+          <div class="card chapter__card reveal">
+            <span class="pill">Chapter 04</span>
+            <h3>Series A <span class="muted">(for Absolutely Nothing)</span></h3>
+            <p>I pitched a real investor. He said, <q>Come back when you have traction.</q></p>
+            <p>So I came back with a traction mat from the gym.</p>
+            <p>I am no longer allowed in that building.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chapter" style="--bg: var(--c-orange)">
+        <div class="container chapter__grid">
+          <div class="chapter__art reveal" aria-hidden="true">🔥</div>
+          <div class="card chapter__card reveal">
+            <span class="pill">Chapter 05</span>
+            <h3>Burn Rate</h3>
+            <p>Monthly expenses, fully transparent:</p>
+            <ul class="bars">
+              <li style="--w: 41%"><span class="bars__label">🍜 Instant noodles</span><span class="bars__track"><span class="bars__fill"></span></span><span class="bars__val">41%</span></li>
+              <li style="--w: 30%"><span class="bars__label">📶 Wi-Fi</span><span class="bars__track"><span class="bars__fill"></span></span><span class="bars__val">30%</span></li>
+              <li style="--w: 29%"><span class="bars__label">🍪 Emotional-support snacks</span><span class="bars__track"><span class="bars__fill"></span></span><span class="bars__val">29%</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chapter chapter--flip" style="--bg: var(--c-lilac)">
+        <div class="container chapter__grid">
+          <div class="chapter__art reveal" aria-hidden="true">🦝</div>
+          <div class="card chapter__card reveal">
+            <span class="pill">Chapter 06</span>
+            <h3>Today</h3>
+            <p>So here I am. No pitch deck. No equity. No exit strategy.</p>
+            <p>Just a raccoon, honestly asking.</p>
+            <p>If this made you smile, that's already worth something. If you'd like to make it worth $3 — <a href="#give" class="link">keep scrolling</a>.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6. TRACTION -->
+    <section class="section" style="--bg: var(--c-teal)">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Traction</span>
+          <h2>The numbers don't lie. Unfortunately.</h2>
+        </div>
+        <div class="grid-4">
+          <div class="card stat reveal">
+            <div class="stat__num">$<span data-count="0" data-decimals="2" data-month-amount>0.00</span></div>
+            <p>raised this month <span class="muted">(and holding strong)</span></p>
+          </div>
+          <div class="card stat reveal">
+            <div class="stat__num"><span data-count="47">0</span></div>
+            <p>weeks of ramen</p>
+          </div>
+          <div class="card stat reveal">
+            <div class="stat__num"><span data-count="3">0</span></div>
+            <p>friends who replied “lol”</p>
+          </div>
+          <div class="card stat reveal">
+            <div class="stat__num"><span data-count="1">0</span></div>
+            <p>mom who is “not mad, just disappointed”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PRICING -->
+    <section class="section" id="pricing" style="--bg: var(--c-cream)">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple, honest pricing.</h2>
+          <p class="lead">No hidden fees. No hidden anything. I have nothing to hide. I have nothing.</p>
+        </div>
+        <div class="grid-3 pricing">
+          <article class="card plan reveal" style="--accent: var(--a-mint)">
+            <span class="plan__emoji">☕</span>
+            <h3>Starter</h3>
+            <p class="plan__name">“The Coffee”</p>
+            <p class="plan__price">$3</p>
+            <ul class="plan__list">
+              <li>1 coffee for Pip</li>
+              <li>1 happy raccoon</li>
+              <li>A virtual high-five ✋</li>
+            </ul>
+            <a href="#give" class="btn btn--ghost btn--block">Choose Starter</a>
+          </article>
+
+          <article class="card plan plan--featured reveal" style="--accent: var(--a-pink)">
+            <span class="plan__badge">⭐ Most Pitied</span>
+            <span class="plan__emoji">🍕</span>
+            <h3>Pro</h3>
+            <p class="plan__name">“The Pizza”</p>
+            <p class="plan__price">$10</p>
+            <ul class="plan__list">
+              <li>Feeds Pip for 2 days</li>
+              <li>Your name saved in my heart <span class="muted">(not a database — can't afford one)</span></li>
+              <li>Priority gratitude</li>
+            </ul>
+            <a href="#give" class="btn btn--primary btn--block">Choose Pro</a>
+          </article>
+
+          <article class="card plan reveal" style="--accent: var(--a-violet)">
+            <span class="plan__emoji">😇</span>
+            <h3>Enterprise</h3>
+            <p class="plan__name">“The Angel Investor”</p>
+            <p class="plan__price">$25<span class="plan__plus">+</span></p>
+            <ul class="plan__list">
+              <li>0% equity</li>
+              <li>100% gratitude</li>
+              <li>Bragging rights</li>
+              <li>A permanent spot in my prayers</li>
+            </ul>
+            <a href="#give" class="btn btn--ghost btn--block">Choose Enterprise</a>
+          </article>
+        </div>
+        <p class="pricing__note reveal">Need a custom plan? <a href="#give" class="link">Contact sales.</a> <span class="muted">(There is no sales team. It's just me.)</span></p>
+      </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS -->
+    <section class="section" style="--bg: var(--c-cream)">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Loved by literally three people.</h2>
+        </div>
+        <div class="grid-3">
+          <figure class="card quote reveal" style="--accent: var(--a-butter)">
+            <div class="quote__stars" aria-label="3 out of 5 stars">★★★<span class="off">★★</span></div>
+            <blockquote>“He's not a bad raccoon. He just makes… choices.”</blockquote>
+            <figcaption><span class="avatar">👩</span> Mom</figcaption>
+          </figure>
+          <figure class="card quote reveal" style="--accent: var(--a-sky)">
+            <div class="quote__stars" aria-label="1 out of 5 stars">★<span class="off">★★★★</span></div>
+            <blockquote>“Please pay rent.”</blockquote>
+            <figcaption><span class="avatar">🧔</span> Landlord</figcaption>
+          </figure>
+          <figure class="card quote reveal" style="--accent: var(--a-pink)">
+            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“I gave $3 and felt something. Probably the coffee.”</blockquote>
+            <figcaption><span class="avatar">🙂</span> A kind stranger</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="section" id="faq" style="--bg: var(--c-cream)">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Is this a scam?</summary>
+            <p>No. A scam pretends to be something else. This is exactly what it looks like: a raccoon asking for money.</p>
+          </details>
+          <details>
+            <summary>What do I get?</summary>
+            <p>Nothing you can hold. A warm feeling. A smile, hopefully. That's the whole product.</p>
+          </details>
+          <details>
+            <summary>Where does the money actually go?</summary>
+            <p>To the real human who built this site and wrote these jokes. Pip is the mascot; the noodles are real.</p>
+          </details>
+          <details>
+            <summary>Is it tax-deductible?</summary>
+            <p>Only emotionally.</p>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <p>It's already noodles. I'm sorry.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. THE ASK (QR) -->
+    <section class="section ask" id="give">
+      <div class="container ask__grid">
+        <div class="ask__copy reveal">
+          <span class="eyebrow eyebrow--light">The honest part</span>
+          <h2>You read this far. That's more than any investor ever did.</h2>
+          <p class="lead">
+            No pressure. No guilt. If Pip made your day a little better, you can buy them a coffee.
+            Any amount helps — even $1. Even just sharing this page.
+          </p>
+          <div class="ask__ctas">
+            <!-- TODO: replace with your real PayPal.me link -->
+            <a href="https://paypal.me/YOUR_NAME" class="btn btn--white" target="_blank" rel="noopener">Open PayPal →</a>
+            <button type="button" class="btn btn--outline-light" id="shareBtn">Share Beggr</button>
+          </div>
+          <p class="ask__thanks">Thank you. Truly. 🦝💜</p>
+        </div>
+
+        <div class="qr reveal">
+          <div class="qr__frame">
+            <!-- TODO: put your PayPal QR image at assets/paypal-qr.png -->
+            <img src="assets/paypal-qr.png" alt="PayPal QR code to donate to Pip" width="260" height="260"
+                 onerror="this.parentElement.classList.add('is-missing')" />
+            <div class="qr__placeholder" aria-hidden="true">
+              <span>🦝</span>
+              <small>PayPal QR goes here<br />(assets/paypal-qr.png)</small>
+            </div>
+          </div>
+          <p class="qr__caption">Scan with your phone camera or the PayPal app</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="logo logo--light"><span class="logo__emoji">🦝</span> Beggr<sup>™</sup></p>
+      <p>
+        © <span id="year">2026</span> Beggr™ — not a real company. Pip is a fictional raccoon.
+        Donations are voluntary gifts to the human behind this site; no goods or services are provided.
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
